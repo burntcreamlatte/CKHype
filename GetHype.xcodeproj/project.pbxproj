@@ -13,6 +13,11 @@
 		AB4D6EC0239EC1DD00EDB9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6EBE239EC1DD00EDB9B8 /* Main.storyboard */; };
 		AB4D6EC2239EC1E200EDB9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6EC1239EC1E200EDB9B8 /* Assets.xcassets */; };
 		AB4D6EC5239EC1E200EDB9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4D6EC3239EC1E200EDB9B8 /* LaunchScreen.storyboard */; };
+		AB4D6ED0239EC20400EDB9B8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4D6ECF239EC20400EDB9B8 /* CloudKit.framework */; };
+		AB4D6ED8239EC2CD00EDB9B8 /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6ED7239EC2CD00EDB9B8 /* Hype.swift */; };
+		AB4D6EDA239EC33900EDB9B8 /* HypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6ED9239EC33900EDB9B8 /* HypeController.swift */; };
+		AB4D6EDC239EC52000EDB9B8 /* HypeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6EDB239EC52000EDB9B8 /* HypeListViewController.swift */; };
+		AB4D6EDF239EC6DE00EDB9B8 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6EDE239EC6DE00EDB9B8 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,12 @@
 		AB4D6EC1239EC1E200EDB9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4D6EC4239EC1E200EDB9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB4D6EC6239EC1E200EDB9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB4D6ECD239EC20200EDB9B8 /* GetHype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GetHype.entitlements; sourceTree = "<group>"; };
+		AB4D6ECF239EC20400EDB9B8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AB4D6ED7239EC2CD00EDB9B8 /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
+		AB4D6ED9239EC33900EDB9B8 /* HypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeController.swift; sourceTree = "<group>"; };
+		AB4D6EDB239EC52000EDB9B8 /* HypeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeListViewController.swift; sourceTree = "<group>"; };
+		AB4D6EDE239EC6DE00EDB9B8 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4D6ED0239EC20400EDB9B8 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,7 @@
 			children = (
 				AB4D6EB7239EC1DD00EDB9B8 /* GetHype */,
 				AB4D6EB6239EC1DD00EDB9B8 /* Products */,
+				AB4D6ECE239EC20400EDB9B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,92 @@
 		AB4D6EB7239EC1DD00EDB9B8 /* GetHype */ = {
 			isa = PBXGroup;
 			children = (
-				AB4D6EB8239EC1DD00EDB9B8 /* AppDelegate.swift */,
-				AB4D6EBA239EC1DD00EDB9B8 /* SceneDelegate.swift */,
+				AB4D6EDD239EC6D000EDB9B8 /* Utilities */,
+				AB4D6ED3239EC2B100EDB9B8 /* Controllers */,
+				AB4D6ED2239EC2AB00EDB9B8 /* Views */,
+				AB4D6ED1239EC2A400EDB9B8 /* Models */,
+				AB4D6ECC239EC1F000EDB9B8 /* Resources */,
 				AB4D6EBC239EC1DD00EDB9B8 /* ViewController.swift */,
-				AB4D6EBE239EC1DD00EDB9B8 /* Main.storyboard */,
-				AB4D6EC1239EC1E200EDB9B8 /* Assets.xcassets */,
-				AB4D6EC3239EC1E200EDB9B8 /* LaunchScreen.storyboard */,
-				AB4D6EC6239EC1E200EDB9B8 /* Info.plist */,
 			);
 			path = GetHype;
+			sourceTree = "<group>";
+		};
+		AB4D6ECC239EC1F000EDB9B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6ECD239EC20200EDB9B8 /* GetHype.entitlements */,
+				AB4D6EB8239EC1DD00EDB9B8 /* AppDelegate.swift */,
+				AB4D6EBA239EC1DD00EDB9B8 /* SceneDelegate.swift */,
+				AB4D6EC1239EC1E200EDB9B8 /* Assets.xcassets */,
+				AB4D6EC6239EC1E200EDB9B8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB4D6ECE239EC20400EDB9B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6ECF239EC20400EDB9B8 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB4D6ED1239EC2A400EDB9B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6ED7239EC2CD00EDB9B8 /* Hype.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB4D6ED2239EC2AB00EDB9B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6ED4239EC2B600EDB9B8 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB4D6ED3239EC2B100EDB9B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6ED6239EC2C300EDB9B8 /* Model Controllers */,
+				AB4D6ED5239EC2BC00EDB9B8 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB4D6ED4239EC2B600EDB9B8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6EBE239EC1DD00EDB9B8 /* Main.storyboard */,
+				AB4D6EC3239EC1E200EDB9B8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AB4D6ED5239EC2BC00EDB9B8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6EDB239EC52000EDB9B8 /* HypeListViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AB4D6ED6239EC2C300EDB9B8 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6ED9239EC33900EDB9B8 /* HypeController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		AB4D6EDD239EC6D000EDB9B8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AB4D6EDE239EC6DE00EDB9B8 /* DateExtension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4D6EDA239EC33900EDB9B8 /* HypeController.swift in Sources */,
+				AB4D6EDF239EC6DE00EDB9B8 /* DateExtension.swift in Sources */,
 				AB4D6EBD239EC1DD00EDB9B8 /* ViewController.swift in Sources */,
+				AB4D6EDC239EC52000EDB9B8 /* HypeListViewController.swift in Sources */,
 				AB4D6EB9239EC1DD00EDB9B8 /* AppDelegate.swift in Sources */,
 				AB4D6EBB239EC1DD00EDB9B8 /* SceneDelegate.swift in Sources */,
+				AB4D6ED8239EC2CD00EDB9B8 /* Hype.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +378,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GetHype/Resources/GetHype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = GetHype/Info.plist;
+				INFOPLIST_FILE = GetHype/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shackelford.GetHype;
+				PRODUCT_BUNDLE_IDENTIFIER = shackelford.ckhype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,14 +397,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GetHype/Resources/GetHype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69Y2XBHVDM;
-				INFOPLIST_FILE = GetHype/Info.plist;
+				INFOPLIST_FILE = GetHype/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = shackelford.GetHype;
+				PRODUCT_BUNDLE_IDENTIFIER = shackelford.ckhype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
