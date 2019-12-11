@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB200ECB23A07D00001B7312 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200ECA23A07D00001B7312 /* User.swift */; };
+		AB200ECD23A08112001B7312 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200ECC23A08112001B7312 /* UserController.swift */; };
+		AB200ECF23A08BC6001B7312 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB200ECE23A08BC6001B7312 /* SignUpViewController.swift */; };
+		AB200ED223A08F7F001B7312 /* HypeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB200ED023A08F7F001B7312 /* HypeList.storyboard */; };
 		AB4D6EB9239EC1DD00EDB9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6EB8239EC1DD00EDB9B8 /* AppDelegate.swift */; };
 		AB4D6EBB239EC1DD00EDB9B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6EBA239EC1DD00EDB9B8 /* SceneDelegate.swift */; };
 		AB4D6EBD239EC1DD00EDB9B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D6EBC239EC1DD00EDB9B8 /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB200ECA23A07D00001B7312 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AB200ECC23A08112001B7312 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		AB200ECE23A08BC6001B7312 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AB200ED123A08F7F001B7312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GetHype/Views/Storyboards/Base.lproj/HypeList.storyboard; sourceTree = "<group>"; };
 		AB4D6EB5239EC1DD00EDB9B8 /* GetHype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetHype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4D6EB8239EC1DD00EDB9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB4D6EBA239EC1DD00EDB9B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +60,7 @@
 		AB4D6EAC239EC1DD00EDB9B8 = {
 			isa = PBXGroup;
 			children = (
+				AB200ED023A08F7F001B7312 /* HypeList.storyboard */,
 				AB4D6EB7239EC1DD00EDB9B8 /* GetHype */,
 				AB4D6EB6239EC1DD00EDB9B8 /* Products */,
 				AB4D6ECE239EC20400EDB9B8 /* Frameworks */,
@@ -103,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				AB4D6ED7239EC2CD00EDB9B8 /* Hype.swift */,
+				AB200ECA23A07D00001B7312 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AB4D6EDB239EC52000EDB9B8 /* HypeListViewController.swift */,
+				AB200ECE23A08BC6001B7312 /* SignUpViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -145,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				AB4D6ED9239EC33900EDB9B8 /* HypeController.swift */,
+				AB200ECC23A08112001B7312 /* UserController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -215,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB200ED223A08F7F001B7312 /* HypeList.storyboard in Resources */,
 				AB4D6EC5239EC1E200EDB9B8 /* LaunchScreen.storyboard in Resources */,
 				AB4D6EC2239EC1E200EDB9B8 /* Assets.xcassets in Resources */,
 				AB4D6EC0239EC1DD00EDB9B8 /* Main.storyboard in Resources */,
@@ -228,10 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB200ECD23A08112001B7312 /* UserController.swift in Sources */,
 				AB4D6EDA239EC33900EDB9B8 /* HypeController.swift in Sources */,
 				AB4D6EDF239EC6DE00EDB9B8 /* DateExtension.swift in Sources */,
 				AB4D6EBD239EC1DD00EDB9B8 /* ViewController.swift in Sources */,
+				AB200ECF23A08BC6001B7312 /* SignUpViewController.swift in Sources */,
 				AB4D6EDC239EC52000EDB9B8 /* HypeListViewController.swift in Sources */,
+				AB200ECB23A07D00001B7312 /* User.swift in Sources */,
 				AB4D6EB9239EC1DD00EDB9B8 /* AppDelegate.swift in Sources */,
 				AB4D6EBB239EC1DD00EDB9B8 /* SceneDelegate.swift in Sources */,
 				AB4D6ED8239EC2CD00EDB9B8 /* Hype.swift in Sources */,
@@ -241,6 +257,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		AB200ED023A08F7F001B7312 /* HypeList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB200ED123A08F7F001B7312 /* Base */,
+			);
+			name = HypeList.storyboard;
+			sourceTree = "<group>";
+		};
 		AB4D6EBE239EC1DD00EDB9B8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

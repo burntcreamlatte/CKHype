@@ -14,15 +14,18 @@ enum HypeStrings {
     static let recordTypeKey = "Hype"
     static let bodyKey = "body"
     static let timestampKey = "timestamp"
+    
 }
 //our model, basically a simple post
 class Hype {
     let body: String
     let timestamp: Date
     
-    init(body: String, timestamp: Date = Date()) {
+    init(body: String, timestamp: Date = Date(), recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString)) {
         self.body = body
         self.timestamp = timestamp
+        self.recordID = recordID
+        self.userReference = userReference
     }
 }
 //incoming <- take a record from the server and turn it back into a Hype
@@ -31,6 +34,8 @@ extension Hype {
         //pulling individual values off of the CKRecord
         //have to typecast so that the compiler knows how to treat the values
         guard let body = ckRecord[HypeStrings.bodyKey] as? String, let timestamp = ckRecord[HypeStrings.timestampKey] as? Date else { return nil }
+        
+        let userReference = CKRecord[
         
         self.init(body: body, timestamp: timestamp)
     }
